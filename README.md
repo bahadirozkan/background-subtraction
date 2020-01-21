@@ -2,7 +2,7 @@
 
 
 Two methods for background subtraction, respectively frame differencing and median filtering has been
-evaluated for three scenes from http://www.changedetection.net/ \
+evaluated for highway, office and pedestrians scenes from the http://www.changedetection.net/ \
 Datasets are found under Dataset &gt;2012&gt; Baseline category.
 
 ## Frame differencing
@@ -29,4 +29,6 @@ Figure 2 On the left: ground truth for highway frame 999, On the right the same 
 | Median filtering   | 65%     | 86%    | 46%         |
 
 
-Accuracies are calculated by taking the absolute difference of results found and ground truths and dividing them by the ground thrust over each frame. Nan and infinite values are removed from the results and their means are taken. As it can be seen above, median filtering gives a better result for the first two scenes. In the office environment motion detection and background subtraction was done effectively. The parameters tried to upgrade pedestrian scene results downgraded other results, so it was left as it is. In median filtering a short history parameter performed better compared to the longer ones such as 500. Overall, these results are satisfactory considering the subtracted elements from the videos are clearly identifiable and can be used for detection or other purposes. 
+Accuracies are calculated by taking the absolute difference of results found and ground truths and dividing them by the ground thrust over each frame. Nan and infinite values are removed from the results and their means are taken. As it can be seen above, median filtering gives a better result for the first two scenes. 
+ 
+In the office environment motion detection and background subtraction was done effectively. The parameters tried to upgrade pedestrian scene results downgraded other results, so it was left as it is. In median filtering a short history parameter performed better compared to the longer ones such as 500. Overall, these results are satisfactory considering the subtracted elements from the videos are clearly identifiable and can be used for detection or other purposes.
